@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <p>FORMULARIO </p>
+    
+    <!-- "action" = dónde queremos que envíe los datos (ruta del archivo) -->
+    <form action="procesar.php" method="POST">
+        <!--Nombre del producto-->
+        <label for="nombre">Nombre del producto:</label>
+        <select name="nombre" id="nombre" required>
+            <option value="producto 1">Producto 1</option>
+            <option value="producto 2">Producto 2</option>
+            <option value="producto 3">Producto 3</option>
+            <option value="producto 4">Producto 4</option>
+        </select><br>
+
+        <!--Categoría-->
+        <label for="categoria">Categoría del producto:</label>
+        <select name="categoria" id="categoria" required>
+            <option value="categoria A">Categoría A</option>
+            <option value="categoria B">Categoría B</option>
+            <option value="categoria C">Categoría C</option>
+        </select><br>
+
+        <!--Cantidad deseada-->
+        <label for="cantidad">Cantidad deseada:</label>
+        <input type="number" name="cantidad" id="cantidad" min="1" required><br>
+
+
+        <button type="submit">Enviar</button>
+    </form>    
+
+</body>
+</html>
